@@ -1,0 +1,298 @@
+.site-footer {
+
+  // contact bar
+  &__contact {
+    padding:80px 0;
+    background:#50575b;
+
+    .container {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .font--grey {
+      margin:0 15px;
+    }
+  }
+
+  &__logo {
+    width:250px;
+    height:48px;
+  }
+
+
+  // main footer
+  &__main {
+    background:#45494c;
+    padding:70px 0;
+    padding-bottom:100px;
+  }
+
+  &__navs {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:40px;
+  }
+
+  &__col {
+    width:180px;
+
+    .bodyfont {
+      margin:0;
+      line-height: 22px;
+    }
+
+    .bodyfont:hover {
+      color:#fff;
+      border-bottom:1px solid #FFF;
+    }
+  }
+
+  &__item:first-child {
+    margin-bottom:20px;
+  }
+
+  &__item {
+    margin: 0 0 10px;
+
+    &--social {
+      display: inline-block;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    svg path {
+      transition: all .2s;
+    }
+
+    svg:hover path {
+      fill: #fff;
+    }
+  }
+
+
+  // bottom stuff
+  &__bottom {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:flex-end;  
+
+  }
+
+  &__left .bodyfont {
+    margin:0;
+  }
+
+  &__left .bodyfont span {
+    margin:0 10px;
+    color:#687177;
+  }
+
+  &__left .footer-break {
+    display: none;
+  }
+
+  &__credentials {
+    max-width:300px;
+    margin-bottom:20px;
+  }
+
+  &__inline-nav {
+
+    .site-footer__item {
+      @include inline(middle);
+      margin: 0 25px 0 0;
+    }
+
+    .site-footer__item:first-child {
+      margin-bottom:0;
+    }
+
+    .bodyfont:hover {
+      color:#fff;
+    }
+
+    a.bodyfont:hover path {
+      fill: #fff;
+    }
+
+    svg {
+      width:88px;
+      height: 24px;
+      @include inline(middle);
+      top:-2px;
+      margin-left:4px;
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 1200px
+@include breakpoint(xxl) {
+  .site-footer {
+
+    &__logo {
+      width: 200px;
+      height: 40px;
+    }
+
+    &__contact .header {
+      @include font-size(22px);
+    }
+
+    &__col {
+      width:30%;
+      margin-bottom: 30px;
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 960px
+@include breakpoint(l) {
+  .site-footer {
+
+    &__contact {
+      padding: 40px 0;
+
+      .header {
+        width: 100%;
+        text-align: center;
+      }
+
+      span.font--grey {
+        display: block;
+        visibility: hidden;
+        line-height: 0;
+      }
+    }
+
+    &__logo {
+      display: none;
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 750px
+@include breakpoint(m) {
+  .site-footer {
+
+    &__left {
+      text-align: center;
+      width: 100%;
+
+      .bodyfont {
+        @include font-size(14px);
+      }
+
+      .footer-break {
+        display: block;
+      }
+    }
+
+    &__left .bodyfont span {
+      display: none;
+    }
+
+    &__right {
+      margin: 30px auto;
+
+      .bodyfont {
+        @include font-size(14px);
+      }
+    }
+
+    &__credentials {
+      max-width:250px;
+      margin-bottom:20px;
+    }
+
+    &__col {
+      width:50%;
+      text-align: center;
+      padding: 0 40px;
+    }
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 600px
+@include breakpoint(s) {
+  .site-footer {
+    &__main {
+      padding: 40px 0;
+    }
+
+    &__col {
+      width:100%;
+    }
+
+    &__item:not(.site-footer__item--social) {
+      margin: 0 0 15px;
+    }
+
+    &__inline-nav {
+      .site-footer__item {
+        width: 100%;
+        text-align: center;
+      }
+
+      .site-footer__item:nth-child(3) {
+        margin-top: 20px;
+      }
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 500px
+@include breakpoint(xs) {
+  .site-footer {
+    &__logo {
+      width:200px;
+      height:40px;
+    }
+
+    &__contact {
+      padding: 40px 0;
+
+      .header {
+        @include font-size(16px);
+        line-height: 26px;
+      }
+    }
+  }
+}

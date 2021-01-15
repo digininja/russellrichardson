@@ -1,0 +1,5 @@
+<svg class="icon icon--play-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.83 100">
+  <title>Play Button SVG Icon</title>
+  <path d="M57.32,49.66l-11.78-7.5A1,1,0,0,0,44,43V58a1,1,0,0,0,.52.88A1,1,0,0,0,45,59a1,1,0,0,0,.54-.16l11.78-7.5a1,1,0,0,0,0-1.68Z" fill="#545a5d"/>
+  <path d="M50,98A48,48,0,1,1,93.62,30h2.21a50,50,0,1,0,0,40H93.62A48.05,48.05,0,0,1,50,98Z" fill="#8cc41d"/>
+</svg>

@@ -1,0 +1,45 @@
+// IE 10
+.ie10 {
+
+  .site-content {
+    padding-top:259px;
+    @include breakpoint(xxl) {
+      padding-top:247px;
+    }
+    @include breakpoint(xl) {
+      padding-top:242px;
+    }
+    @include breakpoint(l) {
+      padding:90px 0 100px;
+    }
+    @include breakpoint(xxs) {
+      padding:79px 0 90px;
+    }
+  }
+
+
+
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .hp-intro {
+    display:block;
+  }
+  .video-btn .icon--play-btn {
+    width: 80px;
+    height: 84px;
+  }
+  .video-btn p {
+    line-height:20px;
+    font-size:12px;
+  }
+  .hp-intro .video-btn {
+    display: block;
+    margin: 0 auto 20px;
+    max-width:200px;
+  }
+
+  .hp-intro__credentials {
+    max-width:400px;
+    margin:0 auto;
+  }
+}

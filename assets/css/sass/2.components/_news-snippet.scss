@@ -1,0 +1,24 @@
+.news-snippet {
+  width: 100%;
+
+  .header--icon,
+  .bodylink.font--14px {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .icon--news {
+    margin-right: 10px;
+  }
+
+  .bodylink.font--14px {
+    float: right;
+    margin-top: 3px;
+  }
+
+  .bodylink.font--22px {
+    display: block;
+    margin: 25px 0 -10px
+  }
+}
+/*------------------------------------------------*/

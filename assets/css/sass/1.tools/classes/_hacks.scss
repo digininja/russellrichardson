@@ -1,0 +1,16 @@
+/*----------------------------------------------------------
+  Hacks
+----------------------------------------------------------*/
+.inline-hack {
+  font-size:0;
+}
+
+.no-edge-margin > :first-child,
+.no-first-margin > :first-child {
+  margin-top:0 !important;
+}
+
+.no-edge-margin > :last-child,
+.no-last-margin > :last-child {
+  margin-bottom:0 !important;
+}

@@ -1,0 +1,52 @@
+
+.hp-intro {
+  display:block;
+}
+
+.trusted-by {
+  background:#619300;
+}
+
+.banner-slider__slide {
+  /*
+  position:static;
+  width:100%;
+  height:400px;
+  display:block;
+  float:left;
+  */
+}
+
+
+.hp-intro__credential {
+  display:block;
+  float:left;
+}
+
+/*
+.site-footer {
+  width:100%;
+  max-width:1300px;
+  display:block;
+  clear:both;
+  margin:0 auto;
+}
+.site-footer__contact, .site-footer__main {
+  width:800px;
+  display:block;
+  margin:0 auto;
+}
+*/
+
+.site-header__logo img {
+  width:250px;
+}
+
+.site-footer__logo img {
+  width:250px;
+}
+
+
+.hp-intro__credentials {
+  height:100px;
+}

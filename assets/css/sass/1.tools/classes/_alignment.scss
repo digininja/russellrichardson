@@ -1,0 +1,26 @@
+/*----------------------------------------------------------
+  Absolute Alignment:
+----------------------------------------------------------*/
+.center--x {
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.center--y {
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.center--xy {
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+/*----------------------------------------------------------
+  Text Alignment:
+----------------------------------------------------------*/
+.align--left {text-align:left;}
+.align--center {text-align:center;}
+.align--right {text-align:right;}

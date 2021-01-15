@@ -1,0 +1,7 @@
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}--#{$space}px {
+      margin-#{$side}: #{$space}px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.advice-links {
+  &__item {
+    padding: 35px 25px;
+    border-top: 1px solid #e5e5e5;
+
+    .icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-top: 5px;
+      vertical-align: top;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: calc(100% - 40px);
+    padding-left: 30px;
+
+    .header {
+      text-decoration: underline;
+    }
+
+    .bodyfont {
+      margin: 0;
+    }
+
+    &:hover .header {
+      text-decoration: none;
+    }
+  }
+}
+
+/*------------------------------------------------*/
+
+// 500px
+@include breakpoint(xs) {
+  .advice-links {
+    &__item {
+      padding: 35px 0;
+
+      .icon {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__link {
+      padding-left: 0;
+    }
+  }
+}

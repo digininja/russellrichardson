@@ -1,0 +1,128 @@
+.image-quote {
+
+  &__image {
+    width:100%;
+    height:280px;
+    border-radius:4px;
+    background:center no-repeat;
+    background-size:cover;
+  }
+
+  &__info {
+
+    .bodyfont {
+      @include inline(top);
+      width:calc(100% - 200px);
+      padding-right:50px;
+      font-style:italic;
+      margin:0;
+      font-weight:600;
+      line-height:36px;
+
+      span {
+        display:block;
+      }
+
+    }
+
+  }
+
+  &__small-img {
+    @include inline(top);
+    width:200px;
+    height:150px;
+    background:center no-repeat;
+    background-size:cover;
+  }
+
+  &--default {
+
+
+
+    .image-quote__info .bodyfont {
+      display:block;
+      font-style: normal;
+      line-height:30px;
+      width: 100%;
+    }
+  }
+
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 1080px
+@include breakpoint(xl) {
+  .image-quote {
+
+
+
+    &__info .bodyfont {
+      @include font-size(18px);
+      line-height:30px;
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+@include breakpoint(m) {
+
+  .image-quote {
+    &__image {
+      height:50vw;
+    }
+  }
+
+}
+
+// 600px
+@include breakpoint(s) {
+  .image-quote {
+
+    &__info .bodyfont {
+      padding-right:30px;
+    }
+
+    &--default {
+      .image-quote__small-img {
+        width: 100%;
+        padding-bottom: 50%;
+        height: auto;
+        margin: 50px 0 20px;
+      }
+
+      .image-quote__info .bodyfont {
+        padding-right:0;
+        width: 100%;
+      }
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 600px
+@include breakpoint(xs) {
+  .image-quote {
+
+    &__info .bodyfont {
+      padding-right:0;
+      width:100%;
+    }
+
+    &__small-img {
+      margin-top:40px;
+      width:100%;
+      height:60vw;
+    }
+
+  }
+}

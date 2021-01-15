@@ -1,0 +1,35 @@
+.locations {
+  &__list {
+    display: inline-block;
+    width: 55%;
+  }
+
+  &__list-item {
+    border-top: 1px solid #e5e5e5;
+    margin: 0;
+    padding: 10px 2px;
+  }
+
+  .sidebar__map {
+    vertical-align: top;
+    width: 40%;
+    margin-left: 5%;
+  }
+}
+
+/*------------------------------------------------*/
+
+// 600px
+@include breakpoint(s) {
+  .locations {
+    &__list {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .sidebar__map {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

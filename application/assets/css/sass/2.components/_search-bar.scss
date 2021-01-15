@@ -1,0 +1,132 @@
+.search-bar {
+  left:-15px;
+  right:15px;
+  height:38px;
+  visibility:hidden;
+  opacity:0;
+  transition:opacity .3s ease, visibility 0s .3s ease;
+
+  &.show {
+    visibility:visible;
+    opacity:1;
+    transition:visibility 0s ease, opacity .3s .1s ease;
+  }
+
+  &__input {
+    font-family:$primaryfont;
+    height:38px;
+    border:1px solid #dbe6eb;
+    border-radius:19px;
+    width:100%;
+    padding:0 105px 0 0;
+    text-indent:43px;
+
+    &:focus {
+      border-color:$black;
+    }
+
+    @include placeholder {
+      color:$grey;
+      opacity:0.7;
+    }
+  }
+
+  &__btn {
+    font-family:$primaryfont;
+    width:88px;
+    height:30px;
+    border-radius:15px;
+    background:$lightgreen;
+    top:4px;
+    right:4px;
+    border:0;
+    appearance:none;
+    padding:0;
+    cursor:pointer;
+
+    &:hover {
+      background:$lightgreen-hover;
+    }
+  }
+
+
+  // search in mobile menu
+  &--mobile {
+    display:none;
+  }
+
+}
+/*------------------------------------------------*/
+
+
+
+
+
+//  max-width: 1200px  //
+@include breakpoint(xxl) {
+  .search-bar {
+
+    &__input {
+      height:34px;
+    }
+
+    &__btn {
+      height:26px;
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+//  max-width: 960px  //
+@include breakpoint(l) {
+  .search-bar {
+    left:-10px;
+    right:-5px;
+
+    &__input {
+      text-indent:33px;
+    }
+
+    // search in mobile menu
+    &--mobile {
+      display:block;
+      opacity:1;
+      visibility:visible;
+      bottom:0;
+      width:250px;
+      right:-280px;
+      left:auto;
+      height:50px;
+      transition:all .3s ease;
+    }
+
+    &--mobile.open {
+      right:0;
+    }
+
+    &--mobile .search-bar__input {
+      height:50px;
+      border-radius:0;
+      border:0;
+      border-top:1px solid #dbe6eb;
+      padding-right:60px;
+      text-indent:20px;
+      appearance:none;
+    }
+
+    &--mobile .search-bar__btn {
+      height:50px;
+      top:0;
+      right:0;
+      padding:0;
+      width:60px;
+      background:transparent;
+    }
+
+  }
+}

@@ -1,0 +1,90 @@
+.certificates {
+
+  &__item {
+    width: 100%;
+    padding: 30px 15px;
+    border-top: 1px solid #e5e5e5;
+
+    .pdf-icon {
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      vertical-align: middle;
+    }
+
+    .button {
+      display: inline-block;
+      width: 170px;
+      float: right;
+      vertical-align: middle;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+
+  &__date {
+    margin: 0;
+    background:url(../svgs/small/icon-calendar.svg) center left no-repeat;
+    background-size:16px 16px;
+    padding-left:25px;
+    color:#b8b8b8;
+    @include font-size(15px);
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 220px;
+    width: 40%;
+  }
+
+  &__buttonholder {
+    display: inline-block;
+    width: 170px;
+    float: right;
+    height:100%;
+    padding-top:5px;
+  }
+}
+
+/*------------------------------------------------*/
+
+// 600px
+@include breakpoint(s) {
+  .certificates {
+    &__buttonholder {
+      width: 100%;
+      float: none;
+      padding-top:0;
+    }
+    &__item {
+      .button {
+        width: 100%;
+        margin-top: 30px;
+        float: none;
+      }
+    }
+
+    &__text {
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+}
+
+// 400px
+@include breakpoint(xxs) {
+  .certificates {
+    &__item {
+      .pdf-icon {
+        display: none;
+      }
+    }
+
+    &__text {
+      margin: 0;
+    }
+  }
+}

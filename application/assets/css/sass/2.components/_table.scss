@@ -1,0 +1,50 @@
+.table {
+  overflow-x: scroll;
+  height: auto;
+  display: block;
+
+  .bodyfont--smaller {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    min-width: 570px;
+  }
+
+  tr {
+    &:first-child {
+      background: $linkblue;
+    }
+  }
+
+  th {
+    padding: 15px 5px 10px 15px;
+    border-right: 3px solid rgba(0,0,0,0.1);
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  td {
+    padding: 10px 5px 10px 15px;
+    border-right: 3px solid #f8f6f7;
+    border-bottom: 3px solid #f8f6f7;
+
+    &:first-child {
+      border-left: 3px solid #f8f6f7;
+    }
+  }
+}
+
+/*------------------------------------------------*/
+
+// 600px
+@include breakpoint(s) {
+  .table {
+    .bodyfont--smaller {
+      display: block;
+    }
+  }
+}

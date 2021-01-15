@@ -1,0 +1,45 @@
+.video-btn {
+  width:100%;
+  max-height:100px;
+  max-width:236px;
+  display:inline-block;
+  transform:translateZ(0);
+  
+  &:focus {outline: none;}
+
+  .icon {transition:all .3s cubic-bezier(.68,-.55,.265,1.55);}
+
+  p {
+    right:0;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+  }
+
+  &:hover .icon {transform:scale(1.1);}
+  &:focus .icon {transform:scale(0.90);}
+
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 960px
+@include breakpoint(l) {
+  .video-btn {
+    max-width:200px;
+
+    .icon--play-btn {
+      width:80px;
+      height:84px;
+    }
+
+    p {
+      @include font-size(12px);
+      line-height:20px;
+    }
+
+  }
+}
+/*------------------------------------------------*/

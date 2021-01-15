@@ -1,0 +1,15 @@
+@mixin ratio($ratio: 1 1, $selector: "> :first-child") {
+	$selector: unquote($selector);
+
+  height:0;
+	padding-bottom: percentage(nth($ratio, 2) / nth($ratio, 1));
+	position:relative;
+
+	#{$selector} {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+	}
+}

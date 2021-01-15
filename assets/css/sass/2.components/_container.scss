@@ -1,0 +1,23 @@
+.container {
+  margin:0 auto;
+  width:100%;
+  padding:$containerpadding;
+
+  @each $classname, $width in $containers {
+    &--#{$classname} {
+      max-width:$width;
+    }
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+//  max-width: 960px  //
+@include breakpoint(l) {
+  .container {
+    padding:0 20px;
+  }
+}

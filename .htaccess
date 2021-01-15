@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteRule ^service/3/(.*)$ /sub_sub_service.php?url=$1 [L]
+RewriteRule ^service/2/(.*)$ /sub_service.php?url=$1 [L]
+RewriteRule ^service/(.*)$ /service.php?url=$1 [L]
+
+RewriteRule ^advice/3/(.*)$ /advice_article.php?url=$1 [L]
+RewriteRule ^advice/2/(.*)$ /advice_sub_cat.php?url=$1 [L]
+RewriteRule ^advice/(.*)$ /advice_category.php?url=$1 [L]
+
+RewriteRule ^cms/(.*)$ /cms.php?url=$1 [L]
+
+RewriteRule ^are-you-compliant.aspx / [R=301,L]
+RewriteRule ^confidential-document-in-house-storage-containers.aspx /service/2/confidential-waste [R=301,L]
+RewriteRule ^contact.aspx /contact.php [R=301,L]
+RewriteRule ^mobile-on-site-confidential-document-shredding-services.aspx /service/2/confidential-waste [R=301,L]
+RewriteRule ^mobile-on-site-confidential-document-shredding-services.aspx/ /service/2/confidential-waste [R=301,L]
+RewriteRule ^new-reception.aspx / [R=301,L]
+RewriteRule ^read-our-blog.aspx /news_landing.php [R=301,L]
+RewriteRule ^total-office-recycling-and-waste-management.aspx /service/2/office-recycling [R=301,L]

@@ -1,0 +1,90 @@
+.image-gallery {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+
+  .header {
+    margin-bottom:10px;
+    width:100%;
+  }
+
+  &__img {
+    background:$block center no-repeat;
+    background-size:cover;
+    border:1px solid #fff;
+    display:block;
+
+    &--main {
+      width:70%;
+      padding-bottom:70%;
+      height:20vh;
+    }
+
+    &--main::after {
+
+      content:'';
+      width:20px;
+      height:20px;
+      border-radius: 4px;
+      background: $lightgreen url('../svgs/small/icon-maximise.svg') center no-repeat;
+      display:block;
+      position:absolute;
+      top:5px;
+      left:5px;
+      z-index:1;
+
+    }
+
+    &--small {
+      width:100%;
+      height:33.333%;
+    }
+  }
+
+  &__small {
+    width:30%;
+  }
+
+}
+
+@include breakpoint(l) {
+  .image-gallery {
+
+    &__img {
+
+
+
+    }
+
+
+
+  }
+}
+
+@include breakpoint(m) {
+
+  .image-gallery {
+
+    &__img {
+
+      &--main {
+        width:100%;
+        height:20vh;
+      }
+
+      &--small {
+        width:33.33%;
+        height:20vh;
+        float:left;
+      }
+    }
+
+    &__small {
+      width:100%;
+      height:auto;
+    }
+
+
+  }
+
+}

@@ -1,0 +1,53 @@
+
+.hp-intro {
+  display:block;
+}
+
+.trusted-by {
+  background:#619300;
+}
+
+.banner-slider__slide {
+
+  position:static;
+  width:100%;
+  height:400px;
+  display:block;
+  float:left;
+
+}
+
+.video-btn {
+  background:#619300;
+  color:#FFF;
+  text-align: center;
+  width:100%;
+  display:block;
+  max-width:1000px;
+
+}
+.video-btn svg {
+  display:none;
+}
+.video-btn p {
+  color:#FFF;
+
+}
+
+.hp-intro__credential {
+  display:block;
+  float:left;
+}
+
+.site-footer {
+  width:100%;
+  max-width:1300px;
+  display:block;
+  clear:both;
+  margin:0 auto;
+}
+.site-footer__contact, .site-footer__main {
+  width:800px;
+  display:block;
+  margin:0 auto;
+}

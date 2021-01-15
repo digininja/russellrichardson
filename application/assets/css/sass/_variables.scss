@@ -1,0 +1,43 @@
+// font families
+$primaryfont:'lato', sans-serif;
+
+
+// default colors
+$black:#545a5d;
+$grey:#859096;
+$lightgreen:#8cd600;
+$darkgreen:#234f33;
+$linkblue:#3b84af;
+
+$lightgreen-hover:#7dc214;
+
+$bggrey:#fafbfb;
+$block:#f4f4f4;
+
+
+// container classes default variables
+$containerpadding:0 30px;
+$containers: (
+  'large':  1360px,
+  'medium': 960px,
+  'small':  600px
+);
+
+
+// breakpoint mixin default variables
+$breakpoint-mode: "max";
+$breakpoints: (
+  xxxl: 1400px,
+  xxl:  1200px,
+  xl:   1080px,
+  l:    960px,
+  m:    750px,
+  s:    600px,
+  xs:   500px,
+  xxs:  400px
+);
+
+
+// margin classes
+$sides: (top, bottom, left, right);
+$spaceamounts: (0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);

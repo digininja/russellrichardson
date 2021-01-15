@@ -1,0 +1,67 @@
+.breadcrumb {
+  width:100%;
+  padding:45px 0 30px;
+
+  &__nav {
+    margin-bottom:10px;
+  }
+
+  &__item {
+    @include inline(baseline);
+    line-height:22px;
+
+    &::after {
+      content:'>';
+      margin:0 8px 0 6px;
+      opacity:0.5;
+    }
+
+    &:last-child::after {
+      content:none;
+    }
+
+    &.bodyfont, .bodyfont {
+      margin:0;
+    }
+  }
+
+  &__header {
+    max-width:640px;
+  }
+
+  &__date {
+    display:inline-block;
+    margin:10px 0 0;
+    background:url(../svgs/small/icon-calendar.svg) center left no-repeat;
+    background-size:16px 16px;
+    padding-left:25px;
+    color:#b8b8b8;
+    @include font-size(15px);
+  }
+
+  &--tight {
+    padding: 55px 0 40px;
+  }
+
+  &--xtight {
+    padding: 55px 0 30px;
+  }
+
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 1200px
+@include breakpoint(m) {
+  .breadcrumb {
+
+    &__header {
+      @include font-size(24px);
+      line-height:34px;
+    }
+
+  }
+}

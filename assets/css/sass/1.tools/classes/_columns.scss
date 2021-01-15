@@ -1,0 +1,20 @@
+/*----------------------------------------------------------
+  Columns:
+----------------------------------------------------------*/
+.columns {
+  font-size:0;
+  display:block;
+}
+
+.columns .col {
+  display:inline-block;
+  vertical-align:top;
+}
+
+.columns--2 .col {width:50%;}
+.columns--3 .col {width:33.333%;}
+.columns--4 .col {width:25%;}
+.columns--5 .col {width:20%;}
+.columns--6 .col {width:16.666%;}
+.columns--8 .col {width:12.5%;}
+.columns--10 .col {width:10%;}

@@ -1,0 +1,182 @@
+.contact {
+  &__top {
+    .button {
+      width: 200px;
+      display: inline-block;
+    }
+
+    .seperator {
+      display: block;
+      width: 430px;
+      text-align: center;
+
+      &:before, &:after {
+        content: '';
+        width: 195px;
+        height: 1px;
+        background: #000;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &:before {
+        margin-right: 10px;
+      }
+
+      &:after {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__top-image {
+    display: inline-block;
+    width: 25%;
+    padding-bottom: 25%;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+  }
+
+  &__top-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+
+  }
+
+  &__map {
+    width: 100%;
+    padding-bottom: 60%;
+    border-radius: 4px;
+  }
+
+  &__form {
+    .icon--padlock {
+      display: inline-block;
+      width: 38px;
+      vertical-align: middle;
+    }
+
+    .header {
+      display: inline-block;
+      width: calc(100% - 38px);
+      padding-left: 15px;
+      vertical-align: middle;
+    }
+  }
+
+  &__info {
+    ul {
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 80px;
+    }
+    li {
+      margin: 5px 0;
+    }
+  }
+}
+
+.contact-result {
+  padding:20px;
+  color:#FFF;
+  margin-bottom:20px;
+  border-radius:4px;
+
+  .bodyfont {
+    color:#FFF;
+    margin:0 0 10px;
+  }
+
+}
+
+.contact-success-container {
+  background:green;
+  .bodyfont {
+    margin-bottom:0;
+  }
+}
+
+.contact-error-container {
+  background:red;
+}
+
+
+/*------------------------------------------------*/
+
+// 960px
+@include breakpoint(l) {
+  .contact {
+    &__top {
+      text-align: center;
+
+      .seperator {
+        margin: 40px auto;
+      }
+    }
+
+    &__top-text {
+      text-align: left;
+      width: 50%;
+    }
+
+    &__info {
+      margin: 50px 0;
+      text-align: center;
+
+      ul {
+        width: 250px;
+        text-align: left;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+// 600px
+@include breakpoint(s) {
+  .contact {
+    &__top {
+      .button {
+        width: 100%;
+        margin: 15px 0;
+      }
+
+      .seperator {
+        width: 100%;
+
+        &:before, &:after {
+          width: 43%;
+        }
+      }
+    }
+    &__info {
+      margin-bottom:0;
+    }
+    &__top-image {
+      display: block;
+      margin: 20px auto;
+      width: 50%;
+      padding-bottom: 50%;
+    }
+
+    &__top-text {
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+// 500px
+@include breakpoint(xs) {
+  .contact {
+    &__info {
+      ul {
+        text-align: center;
+      }
+    }
+  }
+}

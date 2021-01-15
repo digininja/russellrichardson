@@ -1,0 +1,130 @@
+.main-logo {
+  width:350px;
+  height:67px;
+}
+
+.icon {
+  display:inline-block;
+
+  &--play-btn {
+    width:96px;
+    height:100px;
+  }
+
+  &--facebook {
+    width:20px;
+    height:20px;
+  }
+
+  &--twitter {
+    width:20px;
+    height:20px;
+  }
+
+  &--youtube {
+    width:20px;
+    height:20px;
+  }
+
+  &--linkedin {
+    width:20px;
+    height:20px;
+  }
+
+  &--news {
+    width:20px;
+    height:20px;
+    vertical-align: middle;
+  }
+
+  &--quote {
+    width:136px;
+    height:128px;
+  }
+
+
+  // small icons
+  &--small-search {
+    width:19px;
+    height:18px;
+  }
+
+  &--small-arrow {
+    width:12px;
+    height:7px;
+  }
+
+  &--small-phone {
+    width:30px;
+    height:30px;
+  }
+
+  &--small-tick {
+    width:30px;
+    height:30px;
+  }
+
+  &--small-link {
+    width:20px;
+    height:20px;
+  }
+
+  &--small-pin {
+    width:13px;
+    height:20px;
+  }
+
+  &--small-clock {
+    width:30px;
+    height:30px;
+  }
+
+  &--small-package {
+    width:32px;
+    height:35px;
+  }
+
+  &--small-truck {
+    width:32px;
+    height:27px;
+  }
+
+  &--small-news {
+    width:21px;
+    height:21px;
+  }
+
+  &--small-calendar {
+    width:16px;
+    height:16px;
+  }
+
+  &--phone-fill {
+    width:30px;
+    height:30px;
+  }
+
+  &--max {
+    width: 15px;
+    height: 15px;
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+// 600px
+@include breakpoint(s) {
+  .icon {
+    &--small-tick {
+      width:25px;
+      height:25px;
+    }
+
+    &--facebook, &--twitter, &--youtube, &--linkedin {
+      width:25px;
+      height:25px;
+    }
+  }
+}

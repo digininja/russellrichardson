@@ -1,0 +1,164 @@
+.main-content {
+  width:calc(100% - 420px);
+  padding-right:140px;
+  @include inline(top);
+
+  &--home {
+    padding-top:80px;
+  }
+
+  &--internal {
+
+    padding-right:120px;
+    width:calc(100% - 470px);
+
+    > p:not(.bodyfont--large) {@extend .bodyfont;}
+
+    > ul {
+      margin:20px 0 10px;
+    }
+
+    > ul li {
+      @extend .bodyfont;
+      margin:5px;
+    }
+
+    > h2 {
+        @include font-size(28px);
+        margin:20px 0;
+    }
+
+    > h3 {
+        @include font-size(24px);
+        margin:20px 0;
+    }
+
+    > h4 {
+        @include font-size(20px);
+        margin:15px 0;
+    }
+
+    > h5 {
+        @include font-size(18px);
+        margin:10px 0;
+
+    }
+
+    > img {
+      margin:20px 0;
+    }
+
+  }
+
+  &--internal-list {
+    padding-right:120px;
+    width:calc(100% - 470px);
+  }
+
+  &--contact {
+    width: calc(100% - 530px);
+    padding-right:120px;
+  }
+
+  &--advice-page {
+
+    &__image {
+      max-width: 100%;
+      margin:30px auto;
+      display:block;
+    }
+
+    .bodyfont:first-child {margin-top: 0;}
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 1400px
+@include breakpoint(xxxl) {
+  .main-content {
+    padding-right:60px;
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 1200px
+@include breakpoint(xxl) {
+  .main-content {
+
+    &--internal, &--internal-list {
+      width:calc(100% - 350px);
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 1080px
+@include breakpoint(xl) {
+  .main-content {
+    padding-right:40px;
+
+    &--home {
+      width:calc(100% - 300px);
+    }
+
+    &--contact {
+      width: calc(100% - 400px);
+    }
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 960px
+@include breakpoint(l) {
+  .main-content {
+
+    &--home {
+      width:100%;
+      padding-right:0;
+    }
+
+    &--internal, &--internal-list {
+      width:100%;
+      padding-right:0;
+    }
+
+    &--contact {
+      width: 100%;
+      padding-right:0;
+    }
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 750px
+@include breakpoint(m) {
+  .main-content {
+
+    &--home {
+      width:100%;
+      padding-right:0;
+    }
+
+  }
+}

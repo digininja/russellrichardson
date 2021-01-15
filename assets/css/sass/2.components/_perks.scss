@@ -1,0 +1,134 @@
+.perks {
+
+
+  &--homepage {
+    margin:50px 30px 100px;
+  }
+
+  &__item {
+    margin-bottom:20px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background: url('../svgs/small/icon-tick.svg') no-repeat center;
+      background-size: cover;
+      vertical-align: middle;
+    }
+
+    .bodyfont {
+      @include font-size(24px);
+      line-height:34px;
+      padding-left:20px;
+      @include inline(middle);
+      margin:0;
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 1080px
+@include breakpoint(xl) {
+  .perks {
+
+    &--homepage {
+      margin:50px 0 60px;
+    }
+
+    &__item .bodyfont {
+      @include font-size(20px);
+      padding-left:14px;
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 960px
+@include breakpoint(l) {
+  .perks {
+
+    &__item {
+      margin-bottom:15px;
+    }
+
+    &__item .bodyfont {
+      @include font-size(18px);
+    }
+
+  }
+}
+
+
+
+
+
+// 750px
+@include breakpoint(m) {
+  .perks {
+
+    &__item {
+      width: 50%;
+      display: inline-block;
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 600px
+@include breakpoint(s) {
+  .perks {
+
+    &__item {
+      width: 330px;
+      display: block;
+      margin: 0 auto 15px;
+
+      .bodyfont {
+        @include font-size(22px);
+      }
+    }
+
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+// 500px
+@include breakpoint(xxs) {
+  .perks {
+
+    &--homepage {
+      margin: 40px 0 60px;
+    }
+
+    &__item {
+      width:100%;
+      max-width:280px;
+
+      .bodyfont {
+        @include font-size(18px);
+      }
+    }
+    
+  }
+}

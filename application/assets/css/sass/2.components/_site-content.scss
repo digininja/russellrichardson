@@ -1,0 +1,56 @@
+.site-content {
+  padding:175px 0 120px;
+
+  &--homepage {
+    background:url(../svgs/home-shape-bg.svg) 0 0 no-repeat;
+  }
+
+}
+/*------------------------------------------------*/
+
+
+
+
+
+//  max-width: 1200px  //
+@include breakpoint(xxl) {
+  .site-content {
+    padding:159px 0 120px;
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+//  max-width: 1080px  //
+@include breakpoint(xl) {
+  .site-content {
+    padding:154px 0 120px;
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+//  max-width: 960px  //
+@include breakpoint(l) {
+  .site-content {
+    padding:90px 0 100px;
+  }
+}
+/*------------------------------------------------*/
+
+
+
+
+
+//  max-width: 400px  //
+@include breakpoint(xxs) {
+  .site-content {
+    padding:79px 0 90px;
+  }
+}
