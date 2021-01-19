@@ -8,7 +8,7 @@
     <div class="container container--large">
 
       <a class="site-footer__logo" href="/">
-        <img src="/assets/svgs/logos/main-logo--white.svg" alt="Russell Richardson White SVG Logo" />
+        <img src="/assets/images/global/logo-white.png" alt="Russell Richardson White SVG Logo" width="100%" />
       </a>
 
       <h6 class="header font--white">
